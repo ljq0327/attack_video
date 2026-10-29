@@ -1,0 +1,32 @@
+{
+  "dataset": "ntu_rgbd_60",
+  "videos_folder": "/mnt/data/ljq/datasets/16rgb_hdf5/",
+  "training_mode": "CV",
+  "test_annotations": "data/ntu60_cv.csv",
+  "num_actions": 60,
+  "num_views": 3,
+  "views": [1],
+  "selection_group": "action",
+  "target_per_group": 3,
+  "models": {
+    "dvanet": {
+      "checkpoint": "checkpoints/ntu60_cv_dvanet.pth"
+    },
+    "tbcnet": {
+      "checkpoint": "checkpoints/ntu60_cv_tbcnet.pth",
+      "num_views": 2
+    },
+    "ccacnet": {
+      "checkpoint": "checkpoints/ntu60_cv_ccacnet.pth"
+    },
+    "i3d": {
+      "checkpoint": "checkpoints/ntu60_cv_i3d.pth"
+    },
+    "slowfast": {
+      "checkpoint": "checkpoints/ntu60_cv_slowfast.pth"
+    },
+    "timesformer": {
+      "checkpoint": "checkpoints/ntu60_cv_timesformer.pth"
+    }
+  }
+}
