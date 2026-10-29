@@ -1,0 +1,9 @@
+1、非定向攻击启动命令
+python -u main.py \
+  --config configs/model_zoo_ntu120_cs.json \
+  --source_model slowfast \
+  --attack_method tt \
+  --gpu 1 \
+  --batch_size 1 \
+  --epsilon 8/255 \
+  --steps 1
