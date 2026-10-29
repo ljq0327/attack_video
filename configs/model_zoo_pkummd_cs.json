@@ -1,0 +1,28 @@
+{
+  "dataset": "pkummd",
+  "videos_folder": "/mnt/data/ljq/datasets/pku-mmdhdf5/",
+  "training_mode": "CS",
+  "test_annotations": "data/pkummd_cs.csv",
+  "num_actions": 51,
+  "num_views": 3,
+  "models": {
+    "dvanet": {
+      "checkpoint": "checkpoints/pkummd_cs_dvanet.pth"
+    },
+    "tbcnet": {
+      "checkpoint": "checkpoints/pkummd_cs_tbcnet.pth"
+    },
+    "ccacnet": {
+      "checkpoint": "checkpoints/pkummd_cs_ccacnet.pth"
+    },
+    "i3d": {
+      "checkpoint": "checkpoints/pkummd_cs_i3d.pth"
+    },
+    "slowfast": {
+      "checkpoint": "checkpoints/pkummd_cs_slowfast.pth"
+    },
+    "timesformer": {
+      "checkpoint": "checkpoints/pkummd_cs_timesformer.pth"
+    }
+  }
+}
